@@ -5,9 +5,11 @@
 
 trigger:
 - master
-
 pool:
-  name: 'Sharan_TestPool'
+  name: Sharan_TestPool
+  demands:
+  - Agent.Name -equals CHE97FN6G3
+  - Agent.Version -equals 3.220.0
 steps:
 - task: Maven@3
   inputs:

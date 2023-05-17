@@ -7,9 +7,8 @@ trigger:
 - master
 
 pool:
-  name: 'Default'
-  demands:
-  - RCHDEVOPWID2
+  name: Default
+  demands: RCHDEVOPWID2
 steps:
 - task: Maven@3
   inputs:

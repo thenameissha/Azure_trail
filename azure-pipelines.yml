@@ -7,9 +7,9 @@ trigger:
 - master
 
 pool:
-  name: Default
+  name: Sharan_TestPool
   demands:
-  - Agent.Name -equals RCHDEVOPWID2
+  - Agent.Name -equals CHE97FN6G3
 steps:
 - task: Maven@3
   inputs:

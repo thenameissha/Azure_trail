@@ -7,8 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
-
+  name: 'Default'
+  demands:
+  - RCHDEVOPWID2
 steps:
 - task: Maven@3
   inputs:

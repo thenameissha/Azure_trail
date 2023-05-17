@@ -8,8 +8,8 @@ trigger:
 
 pool:
   name: Sharan_TestPool
-  demands: CHE97FN6G3
-
+  demands:
+  - Agent.Name -equals CHE97FN6G3
 steps:
 - task: Maven@3
   inputs:
